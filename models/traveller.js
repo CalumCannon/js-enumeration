@@ -52,7 +52,10 @@ Traveller.prototype.calculateTotalDistanceTravelled = function () {
 
 Traveller.prototype.getUniqueModesOfTransport = function () {
   let object = {};
-  this.journeys.forEach((journey) => {
+
+  const result = numbers.map(() => {}); 
+
+  this.journeys.map((journey) => {
 
     if(!object.contains(journey.transport)){
     minJourney += journey.transport;
