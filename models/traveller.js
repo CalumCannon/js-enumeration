@@ -51,14 +51,12 @@ Traveller.prototype.calculateTotalDistanceTravelled = function () {
 };
 
 Traveller.prototype.getUniqueModesOfTransport = function () {
-  let object = {};
-
-  const result = numbers.map(() => {}); 
+  let object = [];
 
   this.journeys.map((journey) => {
 
-    if(!object.contains(journey.transport)){
-    minJourney += journey.transport;
+    if(!object.includes(journey.transport)){
+    object.push(journey.transport);
     }
 
   });
